@@ -1,0 +1,41 @@
+.header {
+  display: block;
+  width: 100%;
+  background: url("../img/head.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+  position: relative;
+}
+
+.header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.68);
+  z-index: 1;
+}
+
+.header .header-content {
+  display: block;
+  width: 1200px;
+  height: auto;
+  padding: 280px 0px 0px 190px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.header .header-content h1 {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0px;
+  font-family: "Lato Medium";
+  letter-spacing: 2px;
+}
+/*# sourceMappingURL=head.css.map */

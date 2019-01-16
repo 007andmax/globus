@@ -1,0 +1,311 @@
+.cards {
+  display: block;
+  width: 1080px;
+  height: auto;
+  margin: 0px auto;
+  padding: 0px 75px;
+}
+
+.card {
+  display: inline-block;
+  width: 470px;
+  background-color: #f9f9f9;
+  height: 370px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.17);
+          box-shadow: 0 0 18px rgba(0, 0, 0, 0.17);
+  padding: 15px;
+}
+
+.card .date {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card .date p {
+  font-size: 16px;
+  color: #000000;
+  text-align: left;
+  margin: 0px;
+}
+
+.card .head {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 37px 0px 35px 0px;
+  text-align: center;
+}
+
+.card .head h3 {
+  color: #000000;
+  font-size: 27px;
+  font-family: "Museo Sans Cyrl 900";
+  margin: 0px 30px 0px 0px;
+  vertical-align: bottom;
+  line-height: 20px;
+}
+
+.card .head p {
+  display: inline-block;
+  font-size: 18px;
+  color: #000000;
+  text-align: left;
+  margin: 0px;
+  vertical-align: bottom;
+}
+
+.card .income {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.card .income p {
+  font-size: 14px;
+  color: #929292;
+  text-align: left;
+  margin: 0px 15px 0px 0px;
+  vertical-align: bottom;
+}
+
+.card .income h6 {
+  font-family: "Lato Heavy";
+  font-size: 24px;
+  color: #edb81a;
+  margin: 0px 10px 0px 0px;
+  vertical-align: bottom;
+}
+
+.card .income span {
+  color: #000000;
+  text-align: left;
+  font-size: 16px;
+  vertical-align: bottom;
+}
+
+.card .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .prices .prices-item {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0px 30px 0px 0px;
+}
+
+.card .prices .prices-item:last-child {
+  margin: 0px;
+}
+
+.card .prices .prices-item h6 {
+  font-size: 18px;
+  color: #000000;
+  font-family: "Lato Heavy";
+  text-align: center;
+  margin: 0px 0px 5px 0px;
+}
+
+.card .prices .prices-item p {
+  font-size: 14px;
+  text-align: center;
+  margin: 0px;
+  color: #929292;
+}
+
+.card .progress {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 30px 0px 0px 0px;
+}
+
+.card .progress .progress-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 10px 0px;
+}
+
+.card .progress .progress-head p {
+  font-size: 14px;
+  color: #929292;
+  margin: 0px 10px 0px 0px;
+}
+
+.card .progress .progress-head h6 {
+  font-family: "Lato Heavy";
+  font-size: 18px;
+  color: #000000;
+  margin: 0px;
+}
+
+.card .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .progress-bar h6 {
+  font-family: "Lato Heavy";
+  font-size: 14px;
+  color: #000000;
+  text-align: left;
+}
+
+.card .progress-bar .progress-bar-body {
+  display: block;
+  width: 400px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #d7d7d7;
+  margin: 0px 5px;
+  position: relative;
+}
+
+.card .progress-bar .progress-bar-body .progress-bar-body-points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.card .progress-bar .progress-bar-body .progress-bar-item {
+  display: block;
+  width: 2px;
+  height: 13px;
+  background: url("../img/points.png") no-repeat;
+  margin: 0px 0px 0px 49px;
+}
+
+.card .progress-bar .progress-bar-body .progress-bar-item:after {
+  margin: 0px;
+}
+
+.card .progress-bar .progress-bar-body-line {
+  display: block;
+  width: 100px;
+  height: 15px;
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e19306), to(#e1bb06));
+  background-image: linear-gradient(to right, #e19306, #e1bb06);
+  margin: 3px;
+}
+
+button {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1c1c1c;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 30px auto 0px auto;
+  border: none;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffa400), to(#ffde38));
+  background-image: linear-gradient(#ffa400, #ffde38);
+  cursor: pointer;
+}
+
+.etf-head, .square-head, .firbit-head {
+  display: none;
+}
+
+.etf-card {
+  margin: 0px 50px 20px 0px;
+}
+
+.etf-card .etf-head {
+  display: inline-block;
+}
+
+.square-card {
+  margin: 0px 0px 20px 0px;
+}
+
+.square-card .square-head {
+  position: relative;
+  display: inline-block;
+}
+
+.square-card .square-head:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../img/square.png") no-repeat;
+  position: absolute;
+  background-size: contain;
+  top: -5px;
+  left: -40px;
+}
+
+.square-card button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#848484), to(#d6d6d6));
+  background-image: linear-gradient(#848484, #d6d6d6);
+  color: #6e6e6e;
+}
+
+.firbit-card {
+  margin: 0px 0px 20px 0px;
+}
+
+.firbit-card .firbit-head {
+  display: inline-block;
+  position: relative;
+  display: inline-block;
+}
+
+.firbit-card .firbit-head:after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../img/fitbit.png") no-repeat;
+  position: absolute;
+  background-size: contain;
+  top: -5px;
+  left: -40px;
+}
+/*# sourceMappingURL=card.css.map */

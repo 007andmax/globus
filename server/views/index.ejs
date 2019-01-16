@@ -1,0 +1,55 @@
+<style>
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #1b2838;
+}
+    p{
+        display: none;
+    }
+#preloader
+{
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+    z-index: 998;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: absolute;
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+</style>
+
+<body>
+
+<% if (!user) { %>
+<h2>Welcome! Please log in.</h2>
+<p><a href="auth/steam">Sign On with Steam</a></p>
+<% } else { %>
+<p><%= user.id %></p>
+<p><%= user.displayName %></p>
+<p><%= user.photos[2].value %></p>
+<% } %>
+</body>
+
+<!-- Should redirect to homepage if you're not logged in -->
+
