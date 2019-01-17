@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import "../assets/css/card.css";
+import InputMask from 'react-input-mask';
+
+
 
 class Card extends Component {
  points = new Array(7);
@@ -69,7 +72,8 @@ class Card extends Component {
         </div>
         <button>Инвестировать</button>
         <button className="submit-app">Оставить заявку</button>
-        <div className="phone"><p>+79222222222</p></div>
+        <div className="phone"> <InputMask {...this.props} mask="+7\9999999999" maskChar=" " />
+</div>
       </div>
     );
   }
