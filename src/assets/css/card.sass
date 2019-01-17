@@ -153,21 +153,49 @@
             border-radius: 10px
             background-image: linear-gradient(to right, #e19306 , #e1bb06)
             margin: 3px
+    button,.phone
+        display: block
+        font-family: 'Lato', sans-serif
+        font-weight: 400
+        font-size: 14px
+        color: #1c1c1c
+        width: 200px
+        height: 40px
+        border-radius: 20px
+        margin: 30px auto 0px auto
+        border: none
+        text-decoration: none
+        background-image: linear-gradient(#ffa400, #ffde38)
+        cursor: pointer
+    .submit-app
+        box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.35)
+        border: 1px solid #e9ba00
+    .phone
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        position: relative
+        &:after
+            content: ""
+            position: absolute
+            top: 1px
+            right: 1px
+            left: 1px
+            bottom: 1px
+            background: #ffffff
+            border-radius: 20px
+            z-index: 1
+        p
+            position: absolute
+            z-index: 2
+
+            
+
+            
            
-button
-    display: block
-    font-family: 'Lato', sans-serif
-    font-weight: 400
-    font-size: 14px
-    color: #1c1c1c
-    width: 200px
-    height: 40px
-    border-radius: 20px
-    margin: 30px auto 0px auto
-    border: none
-    text-decoration: none
-    background-image: linear-gradient(#ffa400, #ffde38)
-    cursor: pointer
+
+    
 
 .etf-head,.square-head,.firbit-head
     display: none            

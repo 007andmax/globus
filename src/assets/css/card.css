@@ -231,7 +231,7 @@
   margin: 3px;
 }
 
-button {
+.card button, .card .phone {
   display: block;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -246,6 +246,43 @@ button {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffa400), to(#ffde38));
   background-image: linear-gradient(#ffa400, #ffde38);
   cursor: pointer;
+}
+
+.card .submit-app {
+  -webkit-box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.35);
+          box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.35);
+  border: 1px solid #e9ba00;
+}
+
+.card .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.card .phone:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  left: 1px;
+  bottom: 1px;
+  background: #ffffff;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.card .phone p {
+  position: absolute;
+  z-index: 2;
 }
 
 .etf-head, .square-head, .firbit-head {

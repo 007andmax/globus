@@ -68,6 +68,8 @@ class Card extends Component {
           </div>
         </div>
         <button>Инвестировать</button>
+        <button className="submit-app">Оставить заявку</button>
+        <div className="phone"><p>+79222222222</p></div>
       </div>
     );
   }

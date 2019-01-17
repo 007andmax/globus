@@ -22,11 +22,22 @@
           justify-content: flex-end;
 }
 
+.menu .menu-content .select-mask {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .menu .menu-content .chouse {
   display: block;
   height: 35px;
   width: 250px;
   margin: 0px 25px 0px 0px;
+  position: relative;
 }
 
 .menu .menu-content .chouse p {
@@ -35,27 +46,82 @@
   color: #000000;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  margin: 0px 20px 0px 0px;
+  margin: 0px 15px 0px 0px;
   text-transform: uppercase;
 }
 
-.menu .menu-content .chouse select {
+.menu .menu-content .chouse .select {
   display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: #e8e8e8 url("../img/select.png") no-repeat 90% 5px;
   border: 1px solid #d0d0d0;
-  font-size: 14px;
-  height: 35px;
-  padding: 5px;
+  height: 32px;
+  border-radius: 5px;
   width: 130px;
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.menu .menu-content .chouse .select p {
+  font-size: 14px;
   color: #000000;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  text-align: left;
+  margin: 0px;
+  line-height: 35px;
+  text-transform: none;
+  padding: 0px 0px 0px 10px;
 }
 
-.menu .menu-content .chouse select option {
+.menu .menu-content .chouse .select-chouse {
+  display: none;
+  position: absolute;
+  bottom: -78px;
+  right: 9px;
+  width: 130px;
+  z-index: 2;
+  background: #f9f9f9;
+  border: 1px solid #d0d0d0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.menu .menu-content .chouse .select-chouse .select-chouse-item {
+  display: block;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu .menu-content .chouse .select-chouse .select-chouse-item p {
+  font-size: 14px;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: left;
+  margin: 0px;
+  line-height: 40px;
+  text-transform: none;
+  padding: 0px 0px 0px 10px;
+  letter-spacing: 1px;
+}
+
+.menu .menu-content .chouse .select-chouse .select-chouse-item:first-child:after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 1px;
+  background-color: #d0d0d0;
+  left: 5px;
+  bottom: 0px;
+}
+
+.menu .menu-content .chouse option {
   background: #f9f9f9;
   color: #000000;
   font-family: 'Lato', sans-serif;
@@ -64,7 +130,7 @@
   height: 40px;
 }
 
-.menu .menu-content .chouse select option:after {
+.menu .menu-content .chouse option:after {
   content: "";
   position: absolute;
   bottom: 0;
