@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { setSort } from "../actions/menu";
+import { connect } from "react-redux";
 import "../assets/css/menu.css";
 
 function ItemSelect(props) {
@@ -18,14 +20,15 @@ function ItemSelect(props) {
     }
   });
 }
+
 class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = {
       select: [
-        { value: "Новые", label: "Chocolate", select: true },
-        { value: "По доходу", label: "Strawberry", select: false },
-        { value: "По цене", label: "Vanilla", select: false }
+        { value: "Новые", sort: "ideaDate", select: true },
+        { value: "По доходу", sort: "income", select: false },
+        { value: "По цене", sort: "price", select: false }
       ],
       index_select: 0
     };
@@ -46,15 +49,23 @@ class Menu extends Component {
   SelectChouse(event) {
     this.closedShouse();
     event.preventDefault();
+    let index = Number(event.currentTarget.getAttribute("index"));
+    let select = this.state.select;
+    select.map(item => {
+      return (item.select = false);
+    });
+    select[index].select = true;
     this.setState({
+      select: select,
       index_select: Number(event.currentTarget.getAttribute("index"))
     });
+    this.props.setSort(this.state.select[index].sort);
   }
   render() {
     return (
       <div className="menu">
         <div className="menu-content">
-        <div className="select-mask" onClick={this.closedShouse}></div>
+          <div className="select-mask" onClick={this.closedShouse} />
           <div className="chouse">
             <p>показывать</p>
             <div className="select" onClick={this.showChouses}>
@@ -69,5 +80,18 @@ class Menu extends Component {
     );
   }
 }
+let mapStateToProps = state => {
+  return {};
+};
 
-export default Menu;
+let mapDispatchToProps = dispatch => {
+  return {
+    setSort: sort => {
+      dispatch(setSort(sort));
+    }
+  };
+};
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Menu);
