@@ -9,10 +9,11 @@
     display: inline-block
     width: 470px
     background-color: #f9f9f9
-    height: 370px
+    min-height: 370px
     border-radius: 5px
     box-shadow: 0 0 18px rgba(0,0,0,0.17)
     padding: 15px 
+    vertical-align: top
     &:nth-child(2n)
         margin: 0px 0px 20px 0px
     &:nth-child(2n + 1)
@@ -29,24 +30,17 @@
             text-align: left
             margin: 0px
     .head
-        display: block
+        display: flex
         width: 100%
         height: auto
         margin: 37px 0px 35px 0px
-        text-align: center
-        h3
-            color: #000000
-            font-size: 27px
-            font-family: "Museo Sans Cyrl 900"
-            margin: 0px 30px 0px 0px
-            vertical-align: bottom
-            line-height: 20px
+        align-items: flex-end
+        justify-content: center
         img
             display: inline-block
-            height: 30px
+            height: 35px
             vertical-align: bottom
             margin: 0px 30px 0px 0px
-            line-height: 20px
         p
             display: inline-block
            
