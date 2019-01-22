@@ -10,7 +10,6 @@ let promise = null;
 router.get("/download", function(req, res){
 
   var file = __dirname + "/../public/" + req.query.pathfile;
-
   var filename = path.basename(file);
   var mimetype = mime.lookup(file);
 

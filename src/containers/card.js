@@ -81,8 +81,7 @@ class Card extends Component {
         </div>
         <div className="head">
           <img
-            src={
-              "http://localhost:3000/download?pathfile=" +
+            src={window.location.href + "download?pathfile=" +
               this.props.card.logoSrc
             }
           />
